@@ -1,1 +1,597 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color:rgba(13,16,27,255);
+    margin: 0;
+    padding: 0;
+    color: white;
+   
+}
+.container1{
+    display: flex;
+    
+    justify-content: space-between;
+  
+   border-bottom: 1px solid grey;
+   
+   
+}
+/* for mobile
+ */
+ @media (max-width: 882px) {
+    .container1 {
+      flex-direction: column;
+    }
+    #item3 nav ul li a{
+        display: none;
+        
+    }
+    .music{
+        flex-direction: column;
+    }
+    
+    .container2{
+        flex-direction: column;
+    }
+    .container3{
+        flex-direction: column;
+    }
+    .tour{
+        flex-direction: column;
+    }
+    .signup{
+        flex-direction: column;
+    }
+    .musicalalbum2{
+        flex-direction: column;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .latest{
+        flex-direction: column;
+    }
+
+}
+.item{
+    
+   
+}
+#item1{
+    flex-basis:10%;
+    border-right: 2px solid grey;
+}
+#item2{
+    flex-basis: 30%;
+    margin-left: 20px;
+}
+#item3{
+    flex-basis:50% ;
+}
+nav ul li{
+    display: inline;
+    padding: 20px;
+    
+}
+nav ul {
+    text-align: center;
+    margin-top: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+
+    
+}
+nav ul li a:hover{
+  color: red;
+  
+  transition: 0.8s;
+    font-weight: bold;
+
+    
+}
+#item2 img{
+    margin-top: 10px;
+    width: 68px;
+    height: 54px;
+    display: inline;
+    vertical-align: middle; 
+}
+
+#item2 h2{
+    line-height: 40px;
+    margin-top: 50px;
+    
+    /* vertical-align: middle;  */
+
+}
+ #item2 h3{
+   
+    padding: 10px;
+    display: inline;
+    margin-left: 10px;
+    
+}
+#item2 p{
+    color: grey;
+    line-height: 30px;
+}
+ .btn{
+    background-color:#f50e68;
+    width: 152px;
+    height: 49px;
+    padding: 12px;
+    cursor: pointer;
+    margin-top: 70px;
+    border: 5px double grey;
+    color: white;
+}
+.btn:hover{
+    border-radius: 5px;
+  background-color: white;
+  color: black;
+    width: 150px;
+}
+#item3 img{
+    height:472px;
+    width: 100%;
+
+}
+.img{
+    display: inline-block;
+}
+.h3{
+    display: inline-block;
+    text-align: center;
+}
+/* meet our member */
+
+.container2{
+   
+    display: flex;
+    justify-content: space-between;
+   
+  
+
+  }
+  .containerimg {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.meet{
+    
+   
+    
+}
+#meet_1{
+    flex-basis: 10%;
+    border-right: 2px solid grey;
+}
+#meet_2{
+    margin-top: 80px;
+    flex-basis: 90%;
+    
+}
+#meet_2 img{
+  width:100%;
+  text-align: left;
+  height: 300px;
+}
+#meet_2 h1{
+    margin-bottom: 50px;
+    text-align: center;
+}
+#meet_2 p{
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+      .containerimg {
+        position: relative;
+       
+        text-align: center;
+        color: white;
+      }
+      .centered {
+        position: absolute;
+        
+        top: 50%;
+        left: 50%;
+        
+        transform: translate(-50%, -50%);
+      }
+      .centered a{
+        padding-left: 15px;
+      }
+      .centered i{
+        color: white;
+      }
+      .centered i:hover{
+        color: red;
+        transform: translateY(-10px);
+        transition: 0.8s;
+      }
+      .centered p{
+        width: 300px;
+      }
+       
+
+/* upcoming event */
+.container3{
+    display: flex;
+    
+    justify-content: space-between;
+    
+    
+}
+.up{
+
+/* border-bottom: 2px solid grey; */
+border-right: 2px solid grey;
+text-align: center;
+
+}
+#up_1{
+    flex-basis: 10%;
+   
+}
+#up_2{
+    margin-top: 70px;
+    flex-basis: 90%;
+    /* text-align: center; */
+}
+#up_2 h1{
+    /* text-align: center; */
+}
+#up_2 p{
+    /* text-align: center; */
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+/* card css */
+.float-layout {
+    padding: 5px 5px;
+    float: left;
+    width: 90%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .card-container {
+    overflow: hidden;
+  }
+  
+  .card {
+    background-color: #2d303c;
+    color: white;
+    height: 100%;
+    width: 50%;
+    float: right;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    text-align: left;
+    margin: 0px 20px;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+  
+  .card-desc {
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+  }
+  
+  div.card-image img {
+    width: 50%;
+    height: 190px;
+  }
+  
+  .btncard{
+    display: block;
+    border: 5px double grey;
+    width: 100%;
+    height: 49px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .btncard:hover{
+    background-color: #f50e68;
+    color: white;
+  }
+  /* Phone Devices Query */
+  @media only screen and (max-width: 700px) {
+    div.card-image img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .card {
+      width: 100%;
+      margin-top: -4px;
+    }
+
+  }
+  
+#up_2 h1{
+   margin-bottom: 50px;
+   
+}
+
+
+/* TOur starts here */
+.tour{
+    display: flex;
+    justify-content: space-between;
+  
+
+}
+.tours{
+   /* border: 2px solid grey; */
+}
+#tour_1{
+flex-basis: 10%;
+border-right: 2px solid grey;
+
+}
+#tour_2{
+    margin-top: 70px;
+    flex-basis: 40%;
+}
+#tour_2 img{
+width: 517px;
+}
+#tour_3{
+    margin-top: 70px;
+    flex-basis: 40%;
+}
+#tour_3 button{
+    background-color: white;
+    color: black;
+    width: 190px;
+    height: 49px;
+    padding: 17px;
+    margin: 20px 80px;
+    border: 5px double grey;
+    }
+    #tour_3 button:hover{
+background-color: #f50e68;
+color: white;
+    }
+    .margin{
+        margin-left: 125px;
+        border-left: 2px solid grey;
+    }
+    .margin img{
+width: 1117px;
+    }
+
+/* music albums */
+.music{
+    display: flex;
+    
+    justify-content: space-between;
+  
+
+}
+.musical{
+   
+}
+
+#music_1{
+    flex-basis:10% ;
+    border-right: 2px solid grey;
+    
+}
+#music_2{
+flex-basis: 40%;
+margin-top: 70px;
+}
+#music_3{
+    margin-top: 70px;
+    flex-basis: 40%;
+}
+#music_3 button{
+    background-color: white;
+    color: black;
+    width: 190px;
+    height: 49px;
+    padding: 17px;
+    margin: 20px 80px;
+    border: 5px double grey;
+    display: block;
+    }
+    #music_3 button:hover{
+        background-color: #f50e68;
+        color: white;
+       
+    }
+    /* #music_3 img{
+        vertical-align: middle;
+        height: 400px;
+        width: 400px;
+    } */
+
+
+
+    /* Music album part 2 */
+    .musicalalbum2{
+       
+        display: flex;
+        /* margin-top: 70px; */
+       
+    }
+    .musicalalbum{
+        /* margin-top: 70px; */
+    }
+    
+    #m_1{
+flex-basis: 10%;
+border-right: 2px solid grey;
+    }
+    #m_2{
+flex-basis: 38%;
+/* background: url('../src/assets/images/musicalbum2.png'); */
+opacity: 29%;
+
+/* margin-top: 70px; */
+
+   
+}
+#m_2 a i{
+    display: inline-block;
+    text-align: center;
+    font-size: 70px;
+    background-color: white;
+    border-radius: 33px;
+    margin: 170px 160px;
+    color: red;
+    animation-name: sumt1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transition: 0.5;
+}
+@keyframes sumt1{
+    from{
+ font-size: 70px;
+    }
+    to{
+        font-size: 80px;
+    }
+}
+
+#m_2 a i:hover{
+    border: 5px double grey;
+
+}
+
+    #m_3{
+        margin-top: 70px;
+        margin-left: 20px;
+flex-basis: 50%;
+    }
+    
+    /* Latest News */
+    .latest{
+        display: flex;
+        
+        justify-content: space-between;
+        
+    }
+    .latests{
+     
+        text-align: center;
+    }
+    #latest_1{
+        flex-basis: 10%;
+        border-right: 2px solid grey;
+    }
+    #latest_2{
+        margin-top: 70px;
+        flex-basis:90%;
+    }
+    #latest_1{
+        
+    }
+    #latest_2 img{
+        display: block;
+        width: 1115px;
+    }
+    
+    /* signup */
+
+    .signup{
+       
+        display: flex;
+       justify-content: center;
+        align-content: center;
+    }
+    
+    .signups{
+        /* border-bottom:2px solid grey; */
+       
+    }
+    #signup_1{
+        flex-basis: 10%;
+        border-right: 2px solid grey;
+        
+    }
+    #signup_2{
+        margin-top: 80px;
+        flex-basis: 90%;
+        text-align: center;
+        background: linear-gradient(rgba(255, 255, 255, 0.1),rgba(85,85,90,255)), url('../src/assets/images/5420313.jpg' );
+        background-size: contain;
+         }
+#signup_2 p{
+color: #e4d9d9;
+}
+    input{
+        background-color: 
+        #393e4a;
+        width: 200px;
+        color: white;
+        height: 30px;
+        margin-bottom: 20px;
+        padding: 17px;
+    }
+    ::placeholder{
+        color: white;
+        opacity: 1; 
+    }
+
+    /* footer */
+   .footer{
+    display:flex;
+
+   }
+   .footers{
+    
+   }
+   #footer_1{
+    flex-basis:10%;
+    border-right:2px solid grey;
+   }
+   #footer_2{
+    flex-basis: 60%;
+   }
+   #footer_3{
+    flex-basis: 30%;
+    text-align: center;
+    margin-top: 39px;
+   }
+   #footer_2 img{
+    display: inline;
+    vertical-align: middle;
+   }
+   #footer_2 h3{
+    display: inline;
+    margin-left: 10px;
+   }
+   #footer_3 a{
+    padding: 20px;
+   }
+   #footer_3 i{
+    color: white;
+   }
+   #footer_3 i:hover{
+    color: red;
+    transform: translateY(-10px);
+    transition: 0.8s;
+
+   }
+   
